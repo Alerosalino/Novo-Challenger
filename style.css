@@ -1,0 +1,188 @@
+:root {
+--color-primary:#F08787;
+--color-secondary: #fFC7A7;
+--color-tertiary:#D25D5D;
+--color-button: #D25D5D;
+--color-button-hover:#B9375D;
+--color-text: #070202e4;
+--color-white: #FFFFFF;
+}
+body {
+height: 100vh;
+background-color: var(--color-primary);
+display: flex;
+justify-content: center;
+align-items: center;
+padding:0;
+margin:0;
+}
+.main-content {
+display: flex;
+flex-direction: column;
+height: 100%;
+width: 100%;
+}
+/* Banner */
+.header-banner {
+flex: 40%;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 40px 0 0;
+}
+/* Seção de entrada */
+.input-section {
+flex: 60%;
+background-color: var(--color-secondary);
+border:2px solid #000;
+border-radius: 0px 0px 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+width: 100%;
+margin:0%
+}
+/* Títulos */
+.main-title {
+font-size: 48px;
+font-family: "Merriweather", serif;
+font-weight:bolder;
+font-style: italic;
+color: var(--color-white);
+}
+.section-title {
+font-family: "Inter", serif;
+font-size: 42px;
+font-weight: 700;
+color: var(--color-primary);
+margin: 10px 0;
+text-align: center;
+}
+/* Contêineres de entrada e botão */
+.input-wrapper {
+display: flex;
+justify-content: center;
+width: 100%;
+max-width: 600px;
+margin-top: 20px;
+}
+.input-name {
+width: 100%;
+padding: 10px;
+border:3px solid;
+border-radius: 2px 0 2px;
+font-size: 22px;
+font-weight:bold;
+color:#000
+}
+.button-container {
+display: flex;
+justify-content: center;
+gap: 60px;
+margin-top:0 20px;
+}
+/* Estilos de entrada de texto */
+.input-title {
+flex: 1;
+padding: 10px 15px;
+font-size: 16px;
+border: 2px solid #333;
+border-right: none;
+border-radius: 2px 0 0 2px;
+font-family: "Merriweather", serif;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+background-color: wheat;
+
+}
+/* Estilos de botão */
+button {
+padding: 15px 30px;
+font-family: "Inter", sans-serif;
+font-size: 17px;
+border:3px solid #000;
+border-radius: 2px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+cursor: pointer;
+}
+.buttonAdd {
+background-color: var(--color-tertiary);
+color:white;
+font-size:bold;
+border-radius: 0  0px 0px 0
+}
+.buttonAdd:hover {
+background-color: #B9375D;
+}
+
+.remove-button { /* Estilo para o botão de remover participante */
+    background-color: #8FA31B;
+    color: var(--color-white);
+    border: none;
+    border-radius: 50%; /* Botão redondo */
+    width: 25px;
+    height: 25px;
+    font-size:22;
+    font-weight: 900;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none; /* Remove sombra padrão de botão */
+}
+
+.remove-button:hover {
+    background-color: #ea3616;
+}
+
+/* Listas */
+ul {
+list-style-type: none;
+color: var(--color-text);
+font-family: "Inter", sans-serif;
+font-size:22x;
+font-weight: 500;
+margin: 20px 0;
+}
+.result-list {
+margin-top: 15px;
+color: #F08787;
+font-size: 50px;
+font-weight:bolder;
+text-align: center;
+}
+.button-reset {
+padding: 15px 30px;
+cursor: pointer;
+justify-content: right;
+color: var(--color-white);
+background-color: var(--color-button);
+border:3px solid #000;
+font-size: 16px;
+margin: 0 30px;
+gap: 60px;
+}
+
+.button-reset:hover {
+background-color: var(--color-button-hover);
+}
+
+/* Botão de sortear título */
+.button-draw {
+display: flex;
+align-items: center;
+width: 100%;
+padding: 15px 30px;
+justify-content: center;
+color: var(--color-white);
+background-color: var(--color-button);
+font: size 22px;
+gap: 30px;
+}
+.button-draw img {
+margin-right: 40px;
+}
+.button-draw:hover {
+background-color: var(--color-button-hover);
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Amigo Secreto</title>
+</head>
+
+<body>
+    <main class="main-content">
+        <header class="header-banner">
+            <h1 class="main-title">Amigo Secreto</h1>
+            <!-- Recomendo usar um ícone SVG ou uma imagem mais flexível para o presente,
+                 mas 'presente.png' funciona se você já tiver o arquivo.
+                 Adicione um 'loading="lazy"' para otimização, se desejar. -->
+            <img src="presente.png" alt="Caixa de presente com laço, símbolo de amigo secreto" loading="lazy">
+        </header>
+        
+        <section class="input-section">
+            <h2 class="section-title">Adicione os participantes</h2>
+            <div class="input-wrapper">
+                <input type="text" id="input-name" class="input-name" placeholder="Digite o nome do participante" aria-label="Nome do participante">
+                <!-- Removido o onclick redundante e corrigido o id do botão.
+                     O evento será anexado via JavaScript. -->
+                <button id="buttonAdd" class="buttonAdd" type="button">Adicionar</button>
+            </div>
+           
+            <!-- A lista de participantes será populada e gerenciada pelo JavaScript -->
+            <ul id="listaParticipantes" class="name-list" aria-live="polite"></ul>
+            
+            <!-- A lista de resultados do sorteio -->
+            <ul id="resultado" class="result-list" aria-live="polite"></ul>
+
+
+            <div class="button-container">
+                <!-- Removido o onclick redundante. O evento será anexado via JavaScript. -->
+                <button id="buttonDraw" class="button-draw" type="button" aria-label="Sortear amigo secreto" enabled>
+                    <!-- Ajustado o caminho da imagem do ícone para ser mais explícito, se necessário -->
+                    <img src="assets/play_circle_outline.png" alt="Ícone de play" width="24" height="24">
+                    Sortear amigo
+                </button>
+                
+        
+    </button>
+</div>
+        </section>
+    </main>
+
+    <!-- O script deve ser carregado no final do <body> para garantir que o DOM esteja totalmente carregado
+         antes que o JavaScript tente manipular os elementos. -->
+    <script src="app.js"></script>
+</body>
+</html>
